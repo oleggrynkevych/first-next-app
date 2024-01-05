@@ -3,7 +3,7 @@ import styles from './page.module.css';
 import Image from 'next/image';
 
 async function getData(id) {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, { cache: 'no-store' })
+  const res = await fetch(`/api/posts/${id}`, { cache: 'no-store' })
   
  
   if (!res.ok) {
